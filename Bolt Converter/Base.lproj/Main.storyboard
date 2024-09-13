@@ -40,14 +40,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Yca-cp-bpC">
-                                        <rect key="frame" x="88" y="26" width="217" height="32"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <segments>
-                                            <segment title="Imperial (inch)"/>
-                                            <segment title="Metric (mm)"/>
-                                        </segments>
-                                    </segmentedControl>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ4-ev-t77">
                                         <rect key="frame" x="143" y="215" width="107" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -55,13 +47,31 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Convert">
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="convertButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="onc-5Y-rXy"/>
+                                        </connections>
                                     </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rKn-H1-yin">
+                                        <rect key="frame" x="88" y="31" width="217" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <segments>
+                                            <segment title="Imperial (inch)"/>
+                                            <segment title="Metric (mm)"/>
+                                        </segments>
+                                    </segmentedControl>
                                 </subviews>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="convertButton" destination="gQ4-ev-t77" id="Jhg-pz-Xoa"/>
+                        <outlet property="resultLabel" destination="R7j-8y-HVu" id="xHJ-he-Yin"/>
+                        <outlet property="textField" destination="gBi-jQ-kj8" id="cPQ-4p-ULR"/>
+                        <outlet property="unitSegmentedControl" destination="rKn-H1-yin" id="ygJ-7N-Qi1"/>
+                        <outletCollection property="textField" destination="gBi-jQ-kj8" collectionClass="NSMutableArray" id="lDy-j1-Ge6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
