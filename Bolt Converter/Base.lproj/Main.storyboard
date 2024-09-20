@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bolt Size Converter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOT-HQ-CJf">
-                                <rect key="frame" x="73.333333333333314" y="89" width="246.66666666666669" height="36"/>
+                                <rect key="frame" x="73" y="89" width="247" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,11 +33,19 @@
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gBi-jQ-kj8">
                                         <rect key="frame" x="88" y="91" width="217" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="217" id="Nzq-6W-m4X"/>
+                                            <constraint firstAttribute="height" constant="34" id="ciW-18-YiU"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQ4-ev-t77">
-                                        <rect key="frame" x="150" y="216" width="93" height="34.333333333333343"/>
+                                        <rect key="frame" x="150" y="216" width="93" height="34.666666666666657"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34.670000000000002" id="QA1-IU-ulm"/>
+                                            <constraint firstAttribute="width" constant="93" id="q3C-at-9gl"/>
+                                        </constraints>
                                         <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Convert">
                                             <color key="baseForegroundColor" systemColor="labelColor"/>
@@ -48,6 +56,10 @@
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="rKn-H1-yin">
                                         <rect key="frame" x="88" y="30" width="217" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="217" id="41J-0L-0gC"/>
+                                            <constraint firstAttribute="height" constant="31" id="Dp5-IG-ZdS"/>
+                                        </constraints>
                                         <segments>
                                             <segment title="Imperial (inch)"/>
                                             <segment title="Metric (mm)"/>
@@ -167,6 +179,7 @@
                             <constraint firstItem="7gp-CZ-xSv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fLC-nB-29j"/>
                             <constraint firstItem="7gp-CZ-xSv" firstAttribute="top" secondItem="nOT-HQ-CJf" secondAttribute="bottom" constant="15" id="fQH-FD-p9l"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7gp-CZ-xSv" secondAttribute="trailing" constant="170" id="pPd-W2-p1T"/>
+                            <constraint firstItem="7gp-CZ-xSv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rIq-3y-ffA"/>
                             <constraint firstItem="nOT-HQ-CJf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="tu3-MQ-n3C"/>
                             <constraint firstItem="7gp-CZ-xSv" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="uAD-fg-Q3a"/>
                         </constraints>
